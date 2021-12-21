@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeXtUtils</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        background-color:#ecece694 ;
+        /*background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;*/
+       
+    
+
+    }
+    #alert{
+        text-align: center;
+        font-weight: bolder;
+        height: 40px;
+        width: 100%;
+    }
+    #head{
+        text-align: center;
+    }
+    h5,h3{
+        text-align: center;
+    }
+    #notes{
+        height: 30px;
+        width: 100%;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">TeXtUtils</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+ </nav>
+ <div id="alert"> </div>
+ 
+ <div class="container my-4">
+    <h1 id="head">Welcome to TeXtUtils</h1>
+    <div class="card border-secondary">
+        <div class="card-body">
+            <h5 class="card-title">Add Your Text here</h5>
+            <div class="form-group">
+                <textarea class="form-control border-secondary" id="addTxt" rows="5" oninput="countWord() , countCharacter() , timeTaken()"></textarea>
+            </div>
+            <button class="btn btn-dark " id="upperCase">UPPERCASE</button>
+            <button class="btn btn-dark" id="lowerCase">lowercase</button>
+            <button class="btn btn-dark" id="Sentence">Sentence case</button>
+            <button class="btn btn-dark" id="firstWordcapital">Title Case</button>
+            <button class="btn btn-dark" id="remove">Remove Text</button>
+            <button class="btn btn-dark my-3" id="removeSpace">Remove extra space</button>
+            <button class="btn btn-dark" id="copy">Copy Text</button>
+            
+            <button class="btn btn-dark" id="textSum">Text Summary</button>
+            
+            
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <h3>Your text Summary here</h3>
+    <hr>
+    <div id="notes" class="row container-fluid">
+       <h6> Word Count--</h6><h6 id="show">0</h6>
+       <hr>
+       <h6> Characters Count--</h6><h6 id="character">0</h6>
+       <hr>
+       <h6> Minutes take to read--</h6><h6 id="time">0</h6>
+    </div>
+    <hr>
+    <p id="para">
+
+    </p>
+        
+   
+    
+</div>
+ 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+ integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+ crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+ integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+ crossorigin="anonymous"></script>
+ <script src="notes.js"></script>
+    
+</body>
+</html>
